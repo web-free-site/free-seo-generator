@@ -2,7 +2,8 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { HOST, pages } from './seo-paths.mjs'
 
-const paths = pages.map((p) => p.path)
+const GUIDE_PATHS = ["/how-to-write-a-meta-description", "/how-to-add-json-ld-schema-to-a-page"]
+const paths = [...pages.map((p) => p.path), ...GUIDE_PATHS]
 
 const urls = paths
   .map(
