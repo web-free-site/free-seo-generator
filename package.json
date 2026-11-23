@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && node scripts/prerender-seo.mjs && node scripts/generate-sitemap.mjs",
+    "build": "tsc && vite build && node scripts/prerender-seo.mjs && node scripts/generate-sitemap.mjs && node scripts/inject-hub-legal.mjs",
     "preview": "vite preview",
     "lint": "prettier -c .",
     "test": "vitest run"
